@@ -44,6 +44,7 @@ byte player2Counter = 0;
 
 // ---------------------------------------------------------------------------------------------
 
+
 void WeHaveAWinner() {
   
   showWinner = whosTurn;

@@ -1,4 +1,6 @@
 {
     "board": "arduino:avr:leonardo",
-    "sketch": "TicTacToe.ino"
+    "sketch": "TicTacToe.ino",
+    "port": "/dev/cu.usbmodem1421",
+    "output": "../build"
 }
