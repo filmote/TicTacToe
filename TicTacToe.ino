@@ -42,6 +42,17 @@ byte showWinner = 0;
 byte player1Counter = 0;
 byte player2Counter = 0;
 
+// ---------------------------------------------------------------------------------------------
+
+void WeHaveAWinner() {
+  
+  showWinner = whosTurn;
+  sound.tones(winner);
+  
+  if (whosTurn == 1) { player1Counter = player1Counter + 1; }
+  if (whosTurn == 2) { player2Counter = player2Counter + 1; }
+
+}
 
 // ---------------------------------------------------------------------------------------------
 
@@ -279,12 +290,3 @@ void loop() {
   
 }
 
-private void WeHaveAWinner() {
-
-  showWinner = whosTurn;
-  sound.tones(winner);
-  
-  if (whosTurn == 1) { player1Counter = player1Counter + 1; }
-  if (whosTurn == 2) { player2Counter = player2Counter + 1; }
-
-}
